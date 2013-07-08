@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEFA431916231F8900C916DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFA431816231F8900C916DE /* UIKit.framework */; };
+		FEFA431B16231F8900C916DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFA431A16231F8900C916DE /* Foundation.framework */; };
+		FEFA431D16231F8900C916DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFA431C16231F8900C916DE /* CoreGraphics.framework */; };
+		FEFA432316231F8900C916DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFA432116231F8900C916DE /* InfoPlist.strings */; };
+		FEFA432516231F8900C916DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA432416231F8900C916DE /* main.m */; };
+		FEFA432916231F8900C916DE /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA432816231F8900C916DE /* APAppDelegate.m */; };
+		FEFA432B16231F8900C916DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFA432A16231F8900C916DE /* Default.png */; };
+		FEFA432D16231F8900C916DE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFA432C16231F8900C916DE /* Default@2x.png */; };
+		FEFA432F16231F8900C916DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEFA432E16231F8900C916DE /* Default-568h@2x.png */; };
+		FEFA433216231F8900C916DE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFA433016231F8900C916DE /* MainStoryboard.storyboard */; };
+		FEFA433D16231FC400C916DE /* APAirportListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA433C16231FC400C916DE /* APAirportListViewController.m */; };
+		FEFA434516231FFA00C916DE /* airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434216231FFA00C916DE /* airports.plist */; };
+		FEFA434616231FFA00C916DE /* APDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA434416231FFA00C916DE /* APDataSource.m */; };
+		FEFA43691623201800C916DE /* AMS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43491623201800C916DE /* AMS.jpg */; };
+		FEFA436A1623201800C916DE /* ATL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434A1623201800C916DE /* ATL.jpg */; };
+		FEFA436B1623201800C916DE /* BKK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434B1623201800C916DE /* BKK.jpg */; };
+		FEFA436C1623201800C916DE /* CAN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434C1623201800C916DE /* CAN.jpg */; };
+		FEFA436D1623201800C916DE /* CDG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434D1623201800C916DE /* CDG.jpg */; };
+		FEFA436E1623201800C916DE /* CKG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434E1623201800C916DE /* CKG.jpg */; };
+		FEFA436F1623201800C916DE /* CTS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA434F1623201800C916DE /* CTS.jpg */; };
+		FEFA43701623201800C916DE /* DME.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43501623201800C916DE /* DME.jpg */; };
+		FEFA43711623201800C916DE /* DTW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43511623201800C916DE /* DTW.jpg */; };
+		FEFA43721623201800C916DE /* EDI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43521623201800C916DE /* EDI.jpg */; };
+		FEFA43731623201800C916DE /* FRA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43531623201800C916DE /* FRA.jpg */; };
+		FEFA43741623201800C916DE /* HKG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43541623201800C916DE /* HKG.jpg */; };
+		FEFA43751623201800C916DE /* HND.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43551623201800C916DE /* HND.jpg */; };
+		FEFA43761623201800C916DE /* ICN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43561623201800C916DE /* ICN.jpg */; };
+		FEFA43771623201800C916DE /* JFK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43571623201800C916DE /* JFK.jpg */; };
+		FEFA43781623201800C916DE /* KHH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43581623201800C916DE /* KHH.jpg */; };
+		FEFA43791623201800C916DE /* KIX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43591623201800C916DE /* KIX.jpg */; };
+		FEFA437A1623201800C916DE /* LAX.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435A1623201800C916DE /* LAX.jpg */; };
+		FEFA437B1623201800C916DE /* LHR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435B1623201800C916DE /* LHR.jpg */; };
+		FEFA437C1623201800C916DE /* NGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435C1623201800C916DE /* NGO.jpg */; };
+		FEFA437D1623201800C916DE /* NRT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435D1623201800C916DE /* NRT.jpg */; };
+		FEFA437E1623201800C916DE /* OKA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435E1623201800C916DE /* OKA.jpg */; };
+		FEFA437F1623201800C916DE /* PEK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA435F1623201800C916DE /* PEK.jpg */; };
+		FEFA43801623201800C916DE /* PVG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43601623201800C916DE /* PVG.jpg */; };
+		FEFA43811623201800C916DE /* SEA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43611623201800C916DE /* SEA.jpg */; };
+		FEFA43821623201800C916DE /* SFO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43621623201800C916DE /* SFO.jpg */; };
+		FEFA43831623201800C916DE /* SIN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43631623201800C916DE /* SIN.jpg */; };
+		FEFA43841623201800C916DE /* SVO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43641623201800C916DE /* SVO.jpg */; };
+		FEFA43851623201800C916DE /* SYD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43651623201800C916DE /* SYD.jpg */; };
+		FEFA43861623201800C916DE /* TPE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43661623201800C916DE /* TPE.jpg */; };
+		FEFA43871623201800C916DE /* YVR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43671623201800C916DE /* YVR.jpg */; };
+		FEFA43881623201800C916DE /* YYZ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEFA43681623201800C916DE /* YYZ.jpg */; };
+		FEFA438B162321D400C916DE /* APDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA438A162321D400C916DE /* APDetailViewController.m */; };
+		FEFA4392162326C200C916DE /* APAirportListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA4391162326C200C916DE /* APAirportListCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEFA431416231F8900C916DE /* Airports SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airports SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFA431816231F8900C916DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEFA431A16231F8900C916DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEFA431C16231F8900C916DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEFA432016231F8900C916DE /* Airports SB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Airports SB-Info.plist"; sourceTree = "<group>"; };
+		FEFA432216231F8900C916DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEFA432416231F8900C916DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEFA432616231F8900C916DE /* Airports SB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airports SB-Prefix.pch"; sourceTree = "<group>"; };
+		FEFA432716231F8900C916DE /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
+		FEFA432816231F8900C916DE /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
+		FEFA432A16231F8900C916DE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FEFA432C16231F8900C916DE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FEFA432E16231F8900C916DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FEFA433116231F8900C916DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FEFA433B16231FC400C916DE /* APAirportListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAirportListViewController.h; sourceTree = "<group>"; };
+		FEFA433C16231FC400C916DE /* APAirportListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAirportListViewController.m; sourceTree = "<group>"; };
+		FEFA434216231FFA00C916DE /* airports.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = airports.plist; sourceTree = "<group>"; };
+		FEFA434316231FFA00C916DE /* APDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDataSource.h; sourceTree = "<group>"; };
+		FEFA434416231FFA00C916DE /* APDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDataSource.m; sourceTree = "<group>"; };
+		FEFA43491623201800C916DE /* AMS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AMS.jpg; sourceTree = "<group>"; };
+		FEFA434A1623201800C916DE /* ATL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ATL.jpg; sourceTree = "<group>"; };
+		FEFA434B1623201800C916DE /* BKK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BKK.jpg; sourceTree = "<group>"; };
+		FEFA434C1623201800C916DE /* CAN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAN.jpg; sourceTree = "<group>"; };
+		FEFA434D1623201800C916DE /* CDG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CDG.jpg; sourceTree = "<group>"; };
+		FEFA434E1623201800C916DE /* CKG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CKG.jpg; sourceTree = "<group>"; };
+		FEFA434F1623201800C916DE /* CTS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CTS.jpg; sourceTree = "<group>"; };
+		FEFA43501623201800C916DE /* DME.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DME.jpg; sourceTree = "<group>"; };
+		FEFA43511623201800C916DE /* DTW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DTW.jpg; sourceTree = "<group>"; };
+		FEFA43521623201800C916DE /* EDI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EDI.jpg; sourceTree = "<group>"; };
+		FEFA43531623201800C916DE /* FRA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FRA.jpg; sourceTree = "<group>"; };
+		FEFA43541623201800C916DE /* HKG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HKG.jpg; sourceTree = "<group>"; };
+		FEFA43551623201800C916DE /* HND.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HND.jpg; sourceTree = "<group>"; };
+		FEFA43561623201800C916DE /* ICN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ICN.jpg; sourceTree = "<group>"; };
+		FEFA43571623201800C916DE /* JFK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JFK.jpg; sourceTree = "<group>"; };
+		FEFA43581623201800C916DE /* KHH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KHH.jpg; sourceTree = "<group>"; };
+		FEFA43591623201800C916DE /* KIX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KIX.jpg; sourceTree = "<group>"; };
+		FEFA435A1623201800C916DE /* LAX.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LAX.jpg; sourceTree = "<group>"; };
+		FEFA435B1623201800C916DE /* LHR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LHR.jpg; sourceTree = "<group>"; };
+		FEFA435C1623201800C916DE /* NGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NGO.jpg; sourceTree = "<group>"; };
+		FEFA435D1623201800C916DE /* NRT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NRT.jpg; sourceTree = "<group>"; };
+		FEFA435E1623201800C916DE /* OKA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OKA.jpg; sourceTree = "<group>"; };
+		FEFA435F1623201800C916DE /* PEK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PEK.jpg; sourceTree = "<group>"; };
+		FEFA43601623201800C916DE /* PVG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PVG.jpg; sourceTree = "<group>"; };
+		FEFA43611623201800C916DE /* SEA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SEA.jpg; sourceTree = "<group>"; };
+		FEFA43621623201800C916DE /* SFO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SFO.jpg; sourceTree = "<group>"; };
+		FEFA43631623201800C916DE /* SIN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SIN.jpg; sourceTree = "<group>"; };
+		FEFA43641623201800C916DE /* SVO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SVO.jpg; sourceTree = "<group>"; };
+		FEFA43651623201800C916DE /* SYD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SYD.jpg; sourceTree = "<group>"; };
+		FEFA43661623201800C916DE /* TPE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TPE.jpg; sourceTree = "<group>"; };
+		FEFA43671623201800C916DE /* YVR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YVR.jpg; sourceTree = "<group>"; };
+		FEFA43681623201800C916DE /* YYZ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YYZ.jpg; sourceTree = "<group>"; };
+		FEFA4389162321D400C916DE /* APDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDetailViewController.h; sourceTree = "<group>"; };
+		FEFA438A162321D400C916DE /* APDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDetailViewController.m; sourceTree = "<group>"; };
+		FEFA4390162326C200C916DE /* APAirportListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAirportListCell.h; sourceTree = "<group>"; };
+		FEFA4391162326C200C916DE /* APAirportListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAirportListCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFA431116231F8900C916DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFA431916231F8900C916DE /* UIKit.framework in Frameworks */,
+				FEFA431B16231F8900C916DE /* Foundation.framework in Frameworks */,
+				FEFA431D16231F8900C916DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEFA430916231F8900C916DE = {
+			isa = PBXGroup;
+			children = (
+				FEFA431E16231F8900C916DE /* Airports SB */,
+				FEFA431716231F8900C916DE /* Frameworks */,
+				FEFA431516231F8900C916DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFA431516231F8900C916DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA431416231F8900C916DE /* Airports SB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFA431716231F8900C916DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA431816231F8900C916DE /* UIKit.framework */,
+				FEFA431A16231F8900C916DE /* Foundation.framework */,
+				FEFA431C16231F8900C916DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEFA431E16231F8900C916DE /* Airports SB */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA43481623200C00C916DE /* images */,
+				FEFA4394162326CC00C916DE /* Airport List */,
+				FEFA4395162326D400C916DE /* Detail View */,
+				FEFA43471623200200C916DE /* Data source */,
+				FEFA432716231F8900C916DE /* APAppDelegate.h */,
+				FEFA432816231F8900C916DE /* APAppDelegate.m */,
+				FEFA433016231F8900C916DE /* MainStoryboard.storyboard */,
+				FEFA431F16231F8900C916DE /* Supporting Files */,
+			);
+			path = "Airports SB";
+			sourceTree = "<group>";
+		};
+		FEFA431F16231F8900C916DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA432016231F8900C916DE /* Airports SB-Info.plist */,
+				FEFA432116231F8900C916DE /* InfoPlist.strings */,
+				FEFA432416231F8900C916DE /* main.m */,
+				FEFA432616231F8900C916DE /* Airports SB-Prefix.pch */,
+				FEFA432A16231F8900C916DE /* Default.png */,
+				FEFA432C16231F8900C916DE /* Default@2x.png */,
+				FEFA432E16231F8900C916DE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEFA43471623200200C916DE /* Data source */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA434216231FFA00C916DE /* airports.plist */,
+				FEFA434316231FFA00C916DE /* APDataSource.h */,
+				FEFA434416231FFA00C916DE /* APDataSource.m */,
+			);
+			name = "Data source";
+			sourceTree = "<group>";
+		};
+		FEFA43481623200C00C916DE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA43491623201800C916DE /* AMS.jpg */,
+				FEFA434A1623201800C916DE /* ATL.jpg */,
+				FEFA434B1623201800C916DE /* BKK.jpg */,
+				FEFA434C1623201800C916DE /* CAN.jpg */,
+				FEFA434D1623201800C916DE /* CDG.jpg */,
+				FEFA434E1623201800C916DE /* CKG.jpg */,
+				FEFA434F1623201800C916DE /* CTS.jpg */,
+				FEFA43501623201800C916DE /* DME.jpg */,
+				FEFA43511623201800C916DE /* DTW.jpg */,
+				FEFA43521623201800C916DE /* EDI.jpg */,
+				FEFA43531623201800C916DE /* FRA.jpg */,
+				FEFA43541623201800C916DE /* HKG.jpg */,
+				FEFA43551623201800C916DE /* HND.jpg */,
+				FEFA43561623201800C916DE /* ICN.jpg */,
+				FEFA43571623201800C916DE /* JFK.jpg */,
+				FEFA43581623201800C916DE /* KHH.jpg */,
+				FEFA43591623201800C916DE /* KIX.jpg */,
+				FEFA435A1623201800C916DE /* LAX.jpg */,
+				FEFA435B1623201800C916DE /* LHR.jpg */,
+				FEFA435C1623201800C916DE /* NGO.jpg */,
+				FEFA435D1623201800C916DE /* NRT.jpg */,
+				FEFA435E1623201800C916DE /* OKA.jpg */,
+				FEFA435F1623201800C916DE /* PEK.jpg */,
+				FEFA43601623201800C916DE /* PVG.jpg */,
+				FEFA43611623201800C916DE /* SEA.jpg */,
+				FEFA43621623201800C916DE /* SFO.jpg */,
+				FEFA43631623201800C916DE /* SIN.jpg */,
+				FEFA43641623201800C916DE /* SVO.jpg */,
+				FEFA43651623201800C916DE /* SYD.jpg */,
+				FEFA43661623201800C916DE /* TPE.jpg */,
+				FEFA43671623201800C916DE /* YVR.jpg */,
+				FEFA43681623201800C916DE /* YYZ.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		FEFA4394162326CC00C916DE /* Airport List */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA433B16231FC400C916DE /* APAirportListViewController.h */,
+				FEFA433C16231FC400C916DE /* APAirportListViewController.m */,
+				FEFA4390162326C200C916DE /* APAirportListCell.h */,
+				FEFA4391162326C200C916DE /* APAirportListCell.m */,
+			);
+			name = "Airport List";
+			sourceTree = "<group>";
+		};
+		FEFA4395162326D400C916DE /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA4389162321D400C916DE /* APDetailViewController.h */,
+				FEFA438A162321D400C916DE /* APDetailViewController.m */,
+			);
+			name = "Detail View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFA431316231F8900C916DE /* Airports SB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFA433816231F8900C916DE /* Build configuration list for PBXNativeTarget "Airports SB" */;
+			buildPhases = (
+				FEFA431016231F8900C916DE /* Sources */,
+				FEFA431116231F8900C916DE /* Frameworks */,
+				FEFA431216231F8900C916DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airports SB";
+			productName = "Airports SB";
+			productReference = FEFA431416231F8900C916DE /* Airports SB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFA430B16231F8900C916DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "NTU Mobile HCI Lab";
+			};
+			buildConfigurationList = FEFA430E16231F8900C916DE /* Build configuration list for PBXProject "Airports SB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEFA430916231F8900C916DE;
+			productRefGroup = FEFA431516231F8900C916DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFA431316231F8900C916DE /* Airports SB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEFA431216231F8900C916DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFA432316231F8900C916DE /* InfoPlist.strings in Resources */,
+				FEFA432B16231F8900C916DE /* Default.png in Resources */,
+				FEFA432D16231F8900C916DE /* Default@2x.png in Resources */,
+				FEFA432F16231F8900C916DE /* Default-568h@2x.png in Resources */,
+				FEFA433216231F8900C916DE /* MainStoryboard.storyboard in Resources */,
+				FEFA434516231FFA00C916DE /* airports.plist in Resources */,
+				FEFA43691623201800C916DE /* AMS.jpg in Resources */,
+				FEFA436A1623201800C916DE /* ATL.jpg in Resources */,
+				FEFA436B1623201800C916DE /* BKK.jpg in Resources */,
+				FEFA436C1623201800C916DE /* CAN.jpg in Resources */,
+				FEFA436D1623201800C916DE /* CDG.jpg in Resources */,
+				FEFA436E1623201800C916DE /* CKG.jpg in Resources */,
+				FEFA436F1623201800C916DE /* CTS.jpg in Resources */,
+				FEFA43701623201800C916DE /* DME.jpg in Resources */,
+				FEFA43711623201800C916DE /* DTW.jpg in Resources */,
+				FEFA43721623201800C916DE /* EDI.jpg in Resources */,
+				FEFA43731623201800C916DE /* FRA.jpg in Resources */,
+				FEFA43741623201800C916DE /* HKG.jpg in Resources */,
+				FEFA43751623201800C916DE /* HND.jpg in Resources */,
+				FEFA43761623201800C916DE /* ICN.jpg in Resources */,
+				FEFA43771623201800C916DE /* JFK.jpg in Resources */,
+				FEFA43781623201800C916DE /* KHH.jpg in Resources */,
+				FEFA43791623201800C916DE /* KIX.jpg in Resources */,
+				FEFA437A1623201800C916DE /* LAX.jpg in Resources */,
+				FEFA437B1623201800C916DE /* LHR.jpg in Resources */,
+				FEFA437C1623201800C916DE /* NGO.jpg in Resources */,
+				FEFA437D1623201800C916DE /* NRT.jpg in Resources */,
+				FEFA437E1623201800C916DE /* OKA.jpg in Resources */,
+				FEFA437F1623201800C916DE /* PEK.jpg in Resources */,
+				FEFA43801623201800C916DE /* PVG.jpg in Resources */,
+				FEFA43811623201800C916DE /* SEA.jpg in Resources */,
+				FEFA43821623201800C916DE /* SFO.jpg in Resources */,
+				FEFA43831623201800C916DE /* SIN.jpg in Resources */,
+				FEFA43841623201800C916DE /* SVO.jpg in Resources */,
+				FEFA43851623201800C916DE /* SYD.jpg in Resources */,
+				FEFA43861623201800C916DE /* TPE.jpg in Resources */,
+				FEFA43871623201800C916DE /* YVR.jpg in Resources */,
+				FEFA43881623201800C916DE /* YYZ.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFA431016231F8900C916DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFA432516231F8900C916DE /* main.m in Sources */,
+				FEFA432916231F8900C916DE /* APAppDelegate.m in Sources */,
+				FEFA433D16231FC400C916DE /* APAirportListViewController.m in Sources */,
+				FEFA434616231FFA00C916DE /* APDataSource.m in Sources */,
+				FEFA438B162321D400C916DE /* APDetailViewController.m in Sources */,
+				FEFA4392162326C200C916DE /* APAirportListCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEFA432116231F8900C916DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFA432216231F8900C916DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEFA433016231F8900C916DE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFA433116231F8900C916DE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEFA433616231F8900C916DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEFA433716231F8900C916DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEFA433916231F8900C916DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Airports SB/Airports SB-Prefix.pch";
+				INFOPLIST_FILE = "Airports SB/Airports SB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEFA433A16231F8900C916DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Airports SB/Airports SB-Prefix.pch";
+				INFOPLIST_FILE = "Airports SB/Airports SB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFA430E16231F8900C916DE /* Build configuration list for PBXProject "Airports SB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFA433616231F8900C916DE /* Debug */,
+				FEFA433716231F8900C916DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFA433816231F8900C916DE /* Build configuration list for PBXNativeTarget "Airports SB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFA433916231F8900C916DE /* Debug */,
+				FEFA433A16231F8900C916DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEFA430B16231F8900C916DE /* Project object */;
+}
